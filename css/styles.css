@@ -163,3 +163,15 @@ img {
 	clip-path: inset(50%);
 	white-space: nowrap;
 }
+
+@media (min-width: 80rem) {
+	.background-container::before {
+		width: 140%;
+		transform: translate(-60%, -60%);
+	} 
+	
+	.background-container::after {
+		width: 100%;
+		transform: translate(35%, 60%);
+	}
+}
