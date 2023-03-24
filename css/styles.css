@@ -22,9 +22,9 @@ body {
 	place-content: center;
 }
 
-
 img {
 	max-width: 100%;
+	border: solid white 5px;
 	border-radius: 1000px;
 	display: block;
 	margin: auto;
@@ -50,17 +50,20 @@ img {
 
 .background-container::before {
 	width: 140%;
-	transform: translate(-50%, -60%);
+	transform: translate(-55%, -60%);
 	background-image: url(/images/bg-pattern-top.svg);
 } 
 
 .background-container::after {
 	width: 160%;
-	transform: translate(60%, 50%);
+	transform: translate(60%, 55%);
 	background-image: url(/images/bg-pattern-bottom.svg);
 	bottom: 0;
 	right: 0;
 }
+
+
+
 
 .card {
 	background: white;
@@ -70,6 +73,10 @@ img {
 	overflow: hidden;
 	margin: auto;
 	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .card__footer {
@@ -77,18 +84,19 @@ img {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	border-top: solid thin var(--cl-light-grey-ui);
-}
-
-.card__footer > * {
-	display: flex;
-	flex-direction: column;
+	margin: 1.5rem 0;
+	padding: 1.5rem 0 0 0;
 }
 
 .profile__name,
 .text-accent {
 	color: var(--cl-main-type);
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: 700;
+}
+
+.profile__age {
+	color: var(--cl-light-type);
 }
 
 .profile {
@@ -96,7 +104,7 @@ img {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: baseline;
-	gap: .75rem;
+	gap: .25rem .5rem;
 }
 
 .profile__wrapper {
@@ -111,11 +119,47 @@ img {
 
 .profile__image {
 	position: absolute;
-	bottom: -48px;
+	bottom: -51px;
 	left: 50%;
 	transform: translate(-50%);
 }
 
 .profile__location {
 	flex-basis: 100%;
+	font-size: 14px;
+	color: var(--cl-light-type);
+}
+
+.text-label {
+	font-size: 10px;
+	color: var(--cl-light-type);
+	letter-spacing: 1.5px;
+}
+
+.data-col {
+	display: grid;
+	gap: .25rem;
+	margin: 0;
+}
+
+
+
+.attribution {
+	font-size: .75rem;
+	margin-top: 1.75rem;
+	padding: 0 .5rem 1rem;
+}
+
+.attribution a {
+	color: var(--cl-dark-navy);
+}
+
+.sr-only {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
 }
