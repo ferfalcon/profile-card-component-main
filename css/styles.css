@@ -22,6 +22,14 @@ body {
 	place-content: center;
 }
 
+
+img {
+	max-width: 100%;
+	border-radius: 1000px;
+	display: block;
+	margin: auto;
+}
+
 .background-container {
 	overflow: hidden;
 	margin: auto;
@@ -87,15 +95,28 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: baseline;
+	gap: .75rem;
 }
 
-.profile__image {
+
+.profile__wrapper {
 	flex-basis: 100%;
 	max-width: 100%;
 	margin: auto;
+	min-height: 140px;
+	background-image: url(/images/bg-pattern-card.svg);
+	position: relative;
+	margin-bottom: 4rem;
+}
+
+.profile__image {
+	position: absolute;
+	bottom: -94px;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .profile__location {
 	flex-basis: 100%;
-	max-width: 100%;
 }
