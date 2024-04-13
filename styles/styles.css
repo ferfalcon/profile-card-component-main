@@ -4,6 +4,18 @@
   --cl-neutral-600: hsl(228, 10%, 47%);
   --cl-neutral-300: hsl(228, 9%, 92%);
   --cl-neutral-100: hsl(0, 0%, 100%);
+  --ff-main: 'Kumbh Sans', sans-serif;
+  --fs-100: 0.625rem;
+  --fs-400: 0.875rem;
+  --fs-800: 1.125rem;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --ls-400: 0.094rem;
+  --ty-name: var(--fw-bold) var(--fs-800) var(--ff-main);
+  --ty-age: var(--fw-regular) var(--fs-800) var(--ff-main);
+  --ty-location: var(--fw-regular) var(--fs-400) var(--ff-main);
+  --ty-value: var(--fw-bold) var(--fs-400) var(--ff-main);
+  --ty-label: var(--fw-regular) var(--fs-100) var(--ff-main);
 }
 html {
   box-sizing: border-box;
@@ -20,9 +32,9 @@ img {
   font-style: italic;
 }
 body {
+  font-family: var(--ff-main);
   background-color: var(--cl-main-500);
   margin: 0;
-  font-family: 'Kumbh Sans', sans-serif;
   min-height: 100vh;
   display: grid;
   place-content: center;
