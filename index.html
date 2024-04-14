@@ -10,35 +10,26 @@
 	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
-	<main class="background-container">
-		<div class="card">
-			<div class="card__main   profile">
-				<picture class="profile__wrapper">
-					<img class="profile__image" src="images/image-victor.jpg" alt="Victor face">
-				</picture>
-				<span class="profile__name">Victor Crest</span>
-				<span class="profile__age">26</span>
-				<span class="profile__location">London</span>
+<body class="top-wrapper">
+	<main class="profile-card">
+		<img class="profile-card__image" src="images/image-victor.jpg" alt="Victor Crest" width="96" height="96">
+		<h1 class="profile-card__name">Victor Crest</h1>
+		<p class="profile-card__age">26</p>
+		<p class="profile-card__location">London</p>
+		<dl class="profile-card__stats">
+			<div class="profile-card__stat-col">
+				<dt class="profile-card__label">Followers</dt>
+				<dd class="profile-card__value">80K</dd>
 			</div>
-
-			<div class="card__footer">
-				<p class="data-col">
-					<span class="text-accent">80K</span>
-					<span class="text-label">Followers</span>
-				</p>
-
-				<p class="data-col">
-					<span class="text-accent">803K</span>
-					<span class="text-label">Likes</span>
-				</p>
-
-				<p class="data-col">
-					<span class="text-accent">1.4K</span>
-					<span class="text-label">Photos</span>
-				</p>
+			<div class="profile-card__stat-col">
+				<dt class="profile-card__label">Likes</dt>
+				<dd class="profile-card__value">803K</dd>
 			</div>
-		</div>
+			<div class="profile-card__stat-col">
+				<dt class="profile-card__label">Photos</dt>
+				<dd class="profile-card__value">1.4K</dd>
+			</div>
+		</dl>
 	</main>
 	<footer class="signature">
 		<p>
