@@ -80,19 +80,13 @@ img {
 	background-image: url(../images/bg-pattern-bottom.svg);
 	bottom: 0;
 	right: 0;
-}
 
-@media (min-width: 72rem) {
-	.background-container::before {
-		width: 140%;
-		transform: translate(-60%, -60%);
-	} 
-	
-	.background-container::after {
+	@media (min-width: 72rem) {
 		width: 100%;
 		transform: translate(35%, 60%);
 	}
 }
+
 
 .profile-card {
 	background: no-repeat top center url(../images/bg-pattern-card.svg) var(--cl-neutral-100);
@@ -101,6 +95,10 @@ img {
 	max-width: 20.375rem;
 	margin: auto;
 	text-align: center;
+	
+	@media (min-width: 60rem) {
+		max-width: 21.875rem;
+	}
 }
 
 .profile-card__image {

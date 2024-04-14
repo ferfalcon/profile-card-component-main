@@ -63,11 +63,7 @@ img {
   right: 0;
 }
 @media (min-width: 72rem) {
-  .background-container::before {
-    width: 140%;
-    transform: translate(-60%, -60%);
-  }
-  .background-container::after {
+  .top-wrapper::after {
     width: 100%;
     transform: translate(35%, 60%);
   }
@@ -79,6 +75,11 @@ img {
   max-width: 20.375rem;
   margin: auto;
   text-align: center;
+}
+@media (min-width: 60rem) {
+  .profile-card {
+    max-width: 21.875rem;
+  }
 }
 .profile-card__image {
   outline: solid white 5px;
