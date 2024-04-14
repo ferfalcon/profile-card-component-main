@@ -59,43 +59,54 @@ img {
 	overflow: hidden;
 }
 
-.top-wrapper::before, .top-wrapper::after {
+.top-wrapper::before,
+.top-wrapper::after {
 	content: '';
 	display: block;
 	aspect-ratio: 1;
 	position: absolute;
 	z-index: -1;
 	background-size: cover;
-}
+	transform-origin: center;
+	opacity: .25;
+	width: 622px;
 
-.top-wrapper::before {
-	width: 140%;
-	transform: translate(-55%, -60%);
-	background-image: url(../images/bg-pattern-top.svg);
-} 
-
-.top-wrapper::after {
-	width: 160%;
-	transform: translate(60%, 55%);
-	background-image: url(../images/bg-pattern-bottom.svg);
-	bottom: 0;
-	right: 0;
-
-	@media (min-width: 72rem) {
-		width: 100%;
-		transform: translate(35%, 60%);
+	@media (min-width: 60rem) {
+		width: 978px;
 	}
 }
 
+.top-wrapper::before {
+	background-image: url(../images/bg-pattern-top.svg);
+	translate: -70% -55%;
+	rotate: (135deg);
+	
+	@media (min-width: 60rem) {
+		translate: -20% -45%;
+	}
+}
+
+.top-wrapper::after {
+	background-image: url(../images/bg-pattern-bottom.svg);
+	bottom: 0;
+	right: 0;
+	translate: 70% 55%;
+	rotate: (-45deg);
+
+	@media (min-width: 60rem) {
+		translate: 20% 45%;
+	}
+}
 
 .profile-card {
 	background: no-repeat top center url(../images/bg-pattern-card.svg) var(--cl-neutral-100);
+	box-shadow: 0 3.125rem 6.25rem -1.25rem rgba(8, 70, 94, .5048);
 	border-radius: .938rem;
 	width: 90%;
 	max-width: 20.375rem;
 	margin: auto;
 	text-align: center;
-	
+
 	@media (min-width: 60rem) {
 		max-width: 21.875rem;
 	}

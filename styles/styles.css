@@ -49,27 +49,41 @@ img {
   position: absolute;
   z-index: -1;
   background-size: cover;
+  transform-origin: center;
+  opacity: 0.25;
+  width: 622px;
+}
+@media (min-width: 60rem) {
+  .top-wrapper::before,
+  .top-wrapper::after {
+    width: 978px;
+  }
 }
 .top-wrapper::before {
-  width: 140%;
-  transform: translate(-55%, -60%);
   background-image: url(../images/bg-pattern-top.svg);
+  translate: -70% -55%;
+  rotate: 135deg;
+}
+@media (min-width: 60rem) {
+  .top-wrapper::before {
+    translate: -20% -45%;
+  }
 }
 .top-wrapper::after {
-  width: 160%;
-  transform: translate(60%, 55%);
   background-image: url(../images/bg-pattern-bottom.svg);
   bottom: 0;
   right: 0;
+  translate: 70% 55%;
+  rotate: -45deg;
 }
-@media (min-width: 72rem) {
+@media (min-width: 60rem) {
   .top-wrapper::after {
-    width: 100%;
-    transform: translate(35%, 60%);
+    translate: 20% 45%;
   }
 }
 .profile-card {
   background: no-repeat top center url(../images/bg-pattern-card.svg) var(--cl-neutral-100);
+  box-shadow: 0 3.125rem 6.25rem -1.25rem rgba(8, 70, 94, 0.5048);
   border-radius: 0.938rem;
   width: 90%;
   max-width: 20.375rem;
