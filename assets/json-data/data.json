@@ -1,0 +1,20 @@
+{
+	"name": "Arnold Schwarzenegger",
+	"age": 44,
+	"location": "Montevideo",
+	"imageUrl": "./assets/images/image-victor.jpg",
+	"stats": [
+		{
+			"label": "Followers",
+			"value": 80000
+		},
+		{
+			"label": "Likes",
+			"value": 803000
+		},
+		{
+			"label": "Photos",
+			"value": 1400
+		}
+	]
+}

@@ -4,30 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | Profile card component</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body class="top-wrapper">
 	<main class="profile-card">
-		<img class="profile-card__image" src="./images/image-victor.jpg" alt="Victor Crest" width="96" height="96">
-		<h1 class="profile-card__name">Victor Crest</h1>
-		<p class="profile-card__age">26</p>
-		<p class="profile-card__location">London</p>
-		<dl class="profile-card__stats">
+		<img class="profile-card__image" src="./assets/images/image-victor.jpg" alt="" width="96" height="96" data-profile-card-image>
+		<h1 class="profile-card__name" data-profile-card-name>name</h1>
+		<p class="profile-card__age" data-profile-card-age>age</p>
+		<p class="profile-card__location" data-profile-card-location>location</p>
+		<dl class="profile-card__stats" data-profile-stats>
 			<div class="profile-card__stat-col">
-				<dt class="profile-card__label">Followers</dt>
-				<dd class="profile-card__value">80K</dd>
+				<dt class="profile-card__label">Label</dt>
+				<dd class="profile-card__value">0K</dd>
 			</div>
 			<div class="profile-card__stat-col">
-				<dt class="profile-card__label">Likes</dt>
-				<dd class="profile-card__value">803K</dd>
+				<dt class="profile-card__label">Label</dt>
+				<dd class="profile-card__value">0K</dd>
 			</div>
 			<div class="profile-card__stat-col">
-				<dt class="profile-card__label">Photos</dt>
-				<dd class="profile-card__value">1.4K</dd>
+				<dt class="profile-card__label">Label</dt>
+				<dd class="profile-card__value">0K</dd>
 			</div>
 		</dl>
 	</main>
@@ -37,5 +37,6 @@
 			Coded by <a href="https://www.linkedin.com/in/fernandofalcon/" target="_blank">Fer Falcon</a>.
 		</p>
 	</footer>
+	<script type="module" src="./assets/scripts/main.js"></script>
 </body>
 </html>
