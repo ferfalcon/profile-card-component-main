@@ -1,5 +1,5 @@
-import loadData from './async-fetch-json-data';
-import printJsonObject from './print-json-object';
+import loadData from './async-fetch-json-data.js';
+import printJsonObject from './print-json-object.js';
 
 const dataUrl = './assets/json-data/data.json';
 
